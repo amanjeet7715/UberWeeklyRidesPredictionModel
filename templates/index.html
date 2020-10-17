@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Uber Rides Prediction Model</title>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <style>
+    
+      
+      body {
+      background-image: url('static/images/UberIndiaRides.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+    .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: yellow;
+  text-align: center;
+  
+  /* unvisited link */ 
+  a:link { color:  grey; } 
+  /* visited link */ 
+  a:visited { color: yellow; }
+  }
+  </style>
+    
+    </head>
+    <body>
+        <h1>Uber Weekly Rides Analysis</h1>
+        <form action="{{url_for('predict')}}" method="post">
+            <input type="text" name="Priceperweek" placeholder="PricePerWeek" required="required">
+            <input type="text" name="Population" placeholder="Population" required="required">
+            <input type="text" name="Monthlyincome" placeholder="MonthlyIncome" required="required">
+            <input type="text" name="Averageparkingpermonth" placeholder="AverageParkingPerMonth" required="required">
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+        <br>
+        <br>
+        {{ prediction_text }}
+        
+        <div class="footer">
+    <p>Created by : Amanjeet Kumar Mishra<br>
+    
+      <a href="https://www.linkedin.com/in/amanjeet-kumar-mishra-386627168/" target="_blank">LinkedIn /</a>
+      <a href="https://github.com/amanjeet7715" target="_blank">/ GitHub</a>
+    </p>
+        </div>
+    </body>
+</html>
