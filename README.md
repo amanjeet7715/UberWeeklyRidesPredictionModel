@@ -2,7 +2,7 @@
 
 It is a Uber Weekly Rides Prediction App.
 
-This project is all about a Machine Learning based Uber Weekly Rides Prediction web app which makes predictions about weekly rides on various areas in a city on the basis of the required variables as PricePerWeek, Population, MonthlyIncome and AverageParkingPerMonth using the concept of machine learning.
+This project is all about a Machine Learning based Uber Weekly Rides Prediction web app which makes predictions about weekly rides on various areas in a city on the basis of the required variables as PricePerWeek, Population, MonthlyIncome and AverageParkingPerMonth by using the concept of machine learning.
 
 In this project, I have developed a simple Uber Weekly Rides Prediction App which is using a weekly rides Predictor api to provide us the the number of  weekly rides in an area.
 
